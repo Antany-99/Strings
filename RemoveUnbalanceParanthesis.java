@@ -1,5 +1,7 @@
 package Strings;
 
+import java.util.Arrays;
+
 public class RemoveUnbalanceParanthesis {
 	public static void main(String args[]) {
 		String s="(abc)(de))";
@@ -21,6 +23,7 @@ public class RemoveUnbalanceParanthesis {
 			if(close<0) {
 				a[end]=(char)-1;
 				close=0;}}
+		System.out.println(Arrays.toString(a));
 		for(int i=0;i<a.length;i++) {
 			if(a[i]!=-1) {
 				System.out.print(a[i]);}
